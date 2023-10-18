@@ -1,0 +1,7 @@
+appdata/
+build/
+node_modules/
+.env
+
+src/test/*
+src/modules/test.ts

@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "premier-tommorow",
+            "script": "npm",
+            "args": "run start"
+        }
+    ]
+}
