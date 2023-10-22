@@ -41,7 +41,7 @@ bot.callbackQuery('PLAYING_BUTTON', async (ctx) => {
 
     try {
         await ctx.editMessageText(message.join('\n'), {
-            reply_markup: getPlayingKeyboard(ctx.chat?.id!, ctx),
+            reply_markup: getPlayingKeyboard(ctx.chat?.id!),
         });
     } catch (error) {}
 });
@@ -82,7 +82,7 @@ bot.callbackQuery('NOT_PLAYING_BUTTON', async (ctx) => {
 
     try {
         await ctx.editMessageText(message.join('\n'), {
-            reply_markup: getPlayingKeyboard(ctx.chat?.id!, ctx),
+            reply_markup: getPlayingKeyboard(ctx.chat?.id!),
         });
     } catch (error) {}
 });
@@ -122,7 +122,7 @@ bot.callbackQuery('DONT_KNOW_BUTTON', async (ctx) => {
 
     try {
         await ctx.editMessageText(message.join('\n'), {
-            reply_markup: getPlayingKeyboard(ctx.chat?.id!, ctx),
+            reply_markup: getPlayingKeyboard(ctx.chat?.id!),
         });
     } catch (error) {}
 });

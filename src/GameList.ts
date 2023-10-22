@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-import { APP_DATA, PREMIER_GAMES_FILE, REMINDERS_FILE } from './modules/bot';
+import { APP_DATA, PREMIER_GAMES_FILE } from './modules/bot';
 
 export type Game = { date: Date; map: string };
 

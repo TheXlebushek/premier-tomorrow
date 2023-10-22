@@ -10,7 +10,7 @@ import { Reminder } from '../Reminder';
 
 console.log('Initializing bot');
 
-export const VERSION = '1.2.21';
+export const VERSION = '1.2.22';
 export const APP_DATA = 'appdata/';
 export const SESSIONS_DATA = 'sessions/';
 export const REMINDERS_FILE = 'reminders.json';

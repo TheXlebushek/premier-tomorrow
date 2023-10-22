@@ -1,12 +1,12 @@
 import * as fs from 'fs';
 
-import { bot, gameList } from './modules/bot';
 import {
     getPlayingKeyboard,
     getPlayingList,
 } from './modules/playingKeyboard/keyboard';
 
 import { Chat } from './Chat';
+import { gameList } from './modules/bot';
 
 export class Reminder {
     constructor(folder: string, file: string) {
@@ -45,7 +45,7 @@ export class Reminder {
                 );
                 const chat = new Chat(chatId);
                 if (shoudVote) {
-                    const msg = await bot.api.sendMessage(chatId, replyString, {
+                    const msg = await chat.send(replyString, {
                         reply_markup: getPlayingKeyboard(chatId),
                     });
                     chat.pinMessage(msg.message_id);
